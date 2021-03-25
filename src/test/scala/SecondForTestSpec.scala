@@ -25,5 +25,6 @@ class SecondForTestSpec extends FlatSpec with MockitoSugar {
     // println("bbb= " + mockFistForTest.foo3(Random.nextString(2)))   // returns null, why?
     // verify(mockFistForTest, atLeast(1)).foo3("ok")   // use to check what is the argument used in firstForTest.foo3 (random string of length 2)
     verify(mockFistForTest, atLeast(1)).foo3(anyString())
+    // verify(mockFistForTest).foo3(anyString())  // use only when a method is called only once in the test!
   }
 }
