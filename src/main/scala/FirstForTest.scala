@@ -1,6 +1,7 @@
 class FirstForTest {
 
     var value: String = null
+
     def bad(): String = {
       throw new Exception("i'm bad, i should be mocked")
     }
