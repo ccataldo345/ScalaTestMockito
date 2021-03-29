@@ -1,4 +1,4 @@
-import org.mockito.Matchers.anyString
+import org.mockito.ArgumentMatchers.anyString
 import org.mockito.Mockito.{atLeast, doReturn, spy, times, verify, when}
 import org.scalatest.FlatSpec
 import org.scalatestplus.mockito.MockitoSugar

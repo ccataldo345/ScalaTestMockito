@@ -1,1 +1,3 @@
-abstract class Provider{}
+abstract class Provider {
+
+}

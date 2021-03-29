@@ -34,7 +34,7 @@ class FirstForTestSpec extends FlatSpec with MockitoSugar {
   }
   it should "return a composed string" in {
     //doReturn(s"$myException", Nil:_*).when(spyFirstForTest).bad()
-    doReturn(s"$myException").when(spyFirstForTest).bad()
+    doReturn(s"$myException", Nil:_*).when(spyFirstForTest).bad()
     val result = spyFirstForTest.foo2(b)
     assertResult(s"$b $myException")(result)
   }
